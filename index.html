@@ -15,6 +15,10 @@
 <script src="detectbrowser.js"></script>
 <script>
 
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+
 if ('device' in window)
 {
  $("#devicedetails").html(device.model + "<br>" + device.platform);
@@ -22,5 +26,7 @@ if ('device' in window)
 
 $("#browserdetails").html("Browser: "+browserName + ", Version: " + fullVersion);
 $("#useragent").html(navigator.userAgent);
+
+}
 </script>
 </html>
