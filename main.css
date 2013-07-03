@@ -1,0 +1,19 @@
+body {
+	background-image: "background.jpg";
+}
+
+#textbox {
+	/*position:absolute;
+	top:5;
+	bottom:5;
+	left:5;
+	right:5; */
+
+	background-color: white;
+	opacity:0.6;
+  	
+  	filter:alpha(opacity=60);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
